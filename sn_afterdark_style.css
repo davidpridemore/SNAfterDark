@@ -1,61 +1,56 @@
 :root {
   /* ── Accent Colors ───────────────────────────── */
-  --mint-0: 165,214,167;
-  --mint-1: 185,234,187;
-  --mint-hover: 123,199,147;
-  --white: 255,255,255;
+  --mint-0: 165, 214, 167;
+  --mint-1: 185, 234, 187;
+  --mint-hover: 123, 199, 147;
+  --white: 255, 255, 255;
 
   /* ── Icon Filter ─────────────────────────────── */
   --mint-icon-filter:
-    sepia(10%)
-    saturate(120%)
-    hue-rotate(320deg)
-    brightness(300%)
-    contrast(150%);
+    sepia(10%) saturate(120%) hue-rotate(320deg) brightness(300%) contrast(150%);
 
   /* ── Tabs ────────────────────────────────────── */
-  --now-color_alert--positive-0: 0, 128, 96 !important; /* dark teal-green */
-
-  --now-color_alert--critical-0: 139,0,0 !important;
-  --now-color_alert--critical-3: 255,229,229 !important;
+  --now-color_alert--positive-0: 0, 128, 96 !important;
+  --now-color_alert--critical-0: 139, 0, 0 !important;
+  --now-color_alert--critical-3: 255, 229, 229 !important;
+  --now-color_alert--warning-0: 44, 74, 58 !important;     /* dark teal background */
+  --now-color_alert--warning-1: 185, 234, 187 !important;  /* mint-1 for readable text */
+  --now-color_alert--warning-2: 30, 54, 42 !important;     /* darker teal for hover or borders */
   --now-tabs--indicator-color: var(--mint-0) !important;
   --now-tabs--border-color--selected: var(--mint-0) !important;
   --now-tabs--border-color--active: rgba(var(--mint-0), 0.8) !important;
   --now-tabs--border-color--hover: rgba(var(--mint-0), 0.6) !important;
-
   --now-tabs-vertical--border-color--selected: var(--mint-0) !important;
   --now-tabs-vertical--border-color--active: rgba(var(--mint-0), 0.8) !important;
   --now-tabs-vertical--border-color--hover: rgba(var(--mint-0), 0.6) !important;
-
   --now-tabs--color: var(--white) !important;
   --now-tabs--color--selected: var(--mint-0) !important;
   --now-tabs--color--hover: var(--mint-1) !important;
 
   /* ── Backgrounds ─────────────────────────────── */
-  --now-color_background--primary: 3,45,66 !important;
-  --now-color_background--secondary: 35,65,85 !important;
-  --now-color_background--tertiary: 61,86,104 !important;
+  --now-color_background--primary: 3, 45, 66 !important;
+  --now-color_background--secondary: 35, 65, 85 !important;
+  --now-color_background--tertiary: 61, 86, 104 !important;
   --now-color--neutral-0: var(--now-color_background--secondary) !important;
   --now-color--neutral-9: var(--now-color_background--primary) !important;
-  
 
   /* ── Pills ───────────────────────────────────── */
   --now-card--background-color: var(--mint-0) !important;
   --now-pill--background-color: var(--mint-0) !important;
   --now-pill--background-color--hover: rgba(var(--mint-0), 0.12) !important;
   --now-pill--background-color--selected: rgba(var(--mint-0), 0.5) !important;
-  --now-pill--background-color--selected_hover: 0,0,0 !important;
-
-  --now-pill--color: 3,45,66 !important;
+  --now-pill--background-color--selected_hover: 0, 0, 0 !important;
+  --now-pill--color: 3, 45, 66 !important;
   --now-pill--color--hover: var(--mint-1) !important;
-  --now-pill--color--selected: rgba(0,0,0,0.5) !important;
+  --now-pill--color--selected: rgba(0, 0, 0, 0.5) !important;
   --now-pill--color--selected_hover: var(--mint-1) !important;
   --now-pill--border-color--selected_active: var(--mint-0) !important;
 
   /* ── Typography ──────────────────────────────── */
-  --now-color_text--primary: 255,255,255 !important;
-  --now-color_text--secondary: 200,235,200 !important;
-
+  --now-heading--header-tertiary--color: var(--white) !important;
+  --now-color_text--primary: 255, 255, 255 !important;
+  --now-color_text--secondary: 200, 235, 200 !important;
+  --now-color_text--tertiary: var(--white) !important;
   --now-label-value-inline--color: var(--now-color_text--secondary) !important;
   --now-heading--header-primary--color: var(--white) !important;
   --now-heading--header-secondary--color: var(--mint-0) !important;
@@ -70,7 +65,7 @@
   --now-color--link-3: var(--mint-0) !important;
   --now-text-link--primary--color: var(--mint-0) !important;
 
-  /* ── Primary Button (Outline Invert) ─────────── */
+  /* ── Buttons ─────────────────────────────────── */
   --now-button--primary--background-color: var(--now-color_background--primary) !important;
   --now-button--primary--background-color--hover: rgba(var(--mint-0), 0.12) !important;
   --now-button--primary--border-color: var(--mint-0) !important;
@@ -78,63 +73,55 @@
   --now-button--primary--color: var(--mint-0) !important;
   --now-button--primary--color--hover: var(--mint-1) !important;
   --now-button--primary--border-width: 1px !important;
-
-  /* ── Secondary & Tertiary Buttons ────────────── */
   --now-button--secondary--color: var(--mint-0) !important;
   --now-button--secondary--color--hover: var(--mint-1) !important;
-
   --now-button--tertiary--color: var(--mint-0) !important;
   --now-button--tertiary--color--hover: var(--mint-1) !important;
   --now-button--tertiary--hover-color: var(--mint-1) !important;
 
-  /* ── Iconic & Dropdowns ──────────────────────── */
+  /* ── Icons & Dropdowns ───────────────────────── */
   --now-button-iconic--tertiary--color: var(--mint-0) !important;
   --now-button-iconic--tertiary--hover-color: var(--mint-1) !important;
   --now-button-iconic--bare_tertiary--color: var(--mint-0) !important;
-
   --now-button_icon--secondary--color: var(--mint-0) !important;
-  --now-button_icon--secondary--color--hover: 255,255,255 !important;
-
+  --now-button_icon--secondary--color--hover: 255, 255, 255 !important;
   --now-dropdown_icon--secondary--color: var(--mint-0) !important;
   --now-dropdown_icon--secondary--color--hover: var(--mint-0) !important;
   --now-dropdown_icon--secondary--color--active: var(--mint-1) !important;
-
   --now-dropdown--bare_secondary--color: var(--mint-0) !important;
   --now-dropdown--bare_secondary--color--hover: rgba(var(--mint-0), 0.12) !important;
   --now-dropdown_trigger-icon--bare_secondary--color: var(--mint-0) !important;
   --now-dropdown_trigger-icon--bare_secondary--color--hover: rgba(var(--mint-0), 0.12) !important;
-
   --now-dropdown--primary--background-color: var(--mint-0) !important;
   --now-dropdown--primary--background-color--hover: rgba(var(--mint-0), 0.05) !important;
 
-  /* ── Modals ───────────────────────────────────── */
+  /* ── Modals ──────────────────────────────────── */
   --now-modal--background-color: var(--now-color_background--primary) !important;
   --now-modal_heading--color: var(--mint-0) !important;
 
-  /* ── Highlights, Borders, Lists ───────────────── */
+  /* ── Highlights, Borders, Lists ──────────────── */
   --now-highlighted-value--tertiary_positive--background-color: var(--now-color_background--secondary) !important;
   --now-highlighted-value--tertiary_positive--border-color: var(--mint-0) !important;
   --now-highlighted-value--tertiary_positive--color: var(--mint-0) !important;
-
-  --now-color_border--default: 93,118,134 !important;
-
+  --now-color_border--default: 93, 118, 134 !important;
   --now-record-list--row-background--even: var(--now-color_background--secondary) !important;
   --now-record-list--row-background--odd: var(--now-color_background--primary) !important;
   --now-record-list--row-background--hover: var(--now-color_background--tertiary) !important;
 }
 
+/* ── Loader ────────────────────────────────────── */
 :root,
-now-loader,                       /* component host            */
-workflow-spinner,                 /* older host name, just in case */
-now-loading_indicator {           /* Flow Designer’s variant   */
-  --now-loader_label--color: var(--white) !important;   /* 255,255,255 */
+now-loader,
+workflow-spinner,
+now-loading_indicator {
+  --now-loader_label--color: var(--white) !important;
 }
-
 .now-loader-label,
-now-loader::part(label) {         /* modern ::part selector    */
+now-loader::part(label) {
   color: rgb(var(--white)) !important;
 }
 
+/* ── Icons ─────────────────────────────────────── */
 .icon-search::before {
   content: "";
   display: block;
@@ -144,12 +131,11 @@ now-loader::part(label) {         /* modern ::part selector    */
   background-size: 1.2em;
   filter: brightness(0) saturate(100%) invert(78%) sepia(14%) saturate(384%) hue-rotate(73deg) brightness(97%) contrast(92%);
 }
-
-
 .spoke-card .scope-details img.snCoreIcon {
   filter: var(--mint-icon-filter) !important;
 }
 
+/* ── Base Styles ──────────────────────────────── */
 body,
 html,
 .sn-canvas-appshell-layout,
@@ -158,6 +144,7 @@ html,
   color: rgb(var(--now-color_text--primary)) !important;
 }
 
+/* ── Headings, Tabs, Icons ────────────────────── */
 .now-heading.-header.-secondary,
 .now-heading.-header.-tertiary,
 .now-tab,
@@ -165,32 +152,30 @@ html,
   color: rgb(var(--now-color_text--primary)) !important;
   fill: currentColor !important;
 }
-
 .now-heading.-header.-secondary {
   color: rgb(var(--now-heading--header-secondary--color)) !important;
 }
-
 .now-tab:hover,
 .now-tab:focus,
 .now-tab[aria-selected="true"] {
   color: rgb(var(--mint-1)) !important;
 }
-
 .now-tab[aria-selected="true"] {
   font-weight: 700;
 }
 
+/* ── Links ────────────────────────────────────── */
 a,
 .now-grid a {
   color: rgb(var(--now-color--link-2)) !important;
 }
-
 a:hover,
 .now-grid a:hover,
 .now-grid tr:hover a {
   color: rgb(var(--now-color_link--hover)) !important;
 }
 
+/* ── Inputs & Controls ────────────────────────── */
 input,
 textarea,
 select,
@@ -201,18 +186,7 @@ select,
   border-color: rgb(var(--now-color_border--default)) !important;
 }
 
-.now-button.-secondary .now-button-icon,
-.now-dropdown.-secondary .now-icon,
-.now-dropdown.-secondary svg {
-  color: rgb(var(--mint-0)) !important;
-  fill: currentColor !important;
-}
-
-.now-button.-secondary:hover .now-button-icon,
-.now-button.-secondary:focus .now-button-icon {
-  color: rgb(var(--now-button_icon--secondary--color--hover)) !important;
-}
-
+/* ── Cards ────────────────────────────────────── */
 now-card.is-interactive,
 .now-card.is-interactive,
 now-card.is-interactive::part(container) {
@@ -220,7 +194,6 @@ now-card.is-interactive::part(container) {
   color: rgb(var(--now-color_text--primary)) !important;
   border: 1px solid rgb(var(--now-color_border--default)) !important;
 }
-
 now-card.is-interactive:hover,
 .now-card.is-interactive:hover,
 now-card.is-interactive:focus-within,
@@ -229,17 +202,16 @@ now-card.is-interactive:focus-within,
   border-color: rgb(var(--mint-0)) !important;
 }
 
+/* ── Data Panes & Lists ───────────────────────── */
 div.data-pane-section ul {
   background: rgb(var(--now-color_background--secondary)) !important;
   border-color: rgb(var(--now-color_border--default)) !important;
 }
-
 div.data-pane-section ul > *,
 div.pn-content > * {
   background: transparent !important;
   border-color: rgb(var(--now-color_border--default)) !important;
 }
-
 div.data-pane-section ul > *:hover,
 div.pn-content > *:hover {
   background: rgb(var(--now-color_background--tertiary)) !important;
@@ -247,134 +219,122 @@ div.pn-content > *:hover {
   cursor: pointer;
 }
 
+.ui-refresh #flow-editor #editor-body > .SplitPane.vertical > .Pane2 .pn-col .pn-content,
+.ui-refresh #action-editor #editor-body > .SplitPane.vertical > .Pane.vertical.Pane2 > .SplitPane.vertical > .Pane2 .pn-col .pn-content {
+  background: rgb(var(--now-color_background--tertiary)) !important;
+}
+
+/* ── Pagination ──────────────────────────────── */
 .sn-pagination {
   color: rgb(var(--mint-0)) !important;
   font-size: 1rem;
 }
-
 .sn-pagination-btn .now-icon,
 .now-button-iconic.-tertiary .now-icon,
 .now-button-iconic.is-bare.-tertiary .now-icon {
   color: rgb(var(--mint-0)) !important;
 }
-
 .sn-pagination-btn .now-icon[icon="arrow-start-outline"],
 .now-button-iconic.-tertiary .now-icon[icon="arrow-start-outline"],
 .now-button-iconic.is-bare.-tertiary .now-icon[icon="arrow-start-outline"] {
   color: rgb(var(--mint-0)) !important;
 }
-
 .sn-pagination-btn:hover .now-icon[icon="arrow-start-outline"],
 .now-button-iconic.-tertiary:hover .now-icon[icon="arrow-start-outline"],
 .now-button-iconic.is-bare.-tertiary:hover .now-icon[icon="arrow-start-outline"],
 .sn-pagination-btn:focus .now-icon[icon="arrow-start-outline"] {
   color: rgb(var(--mint-1)) !important;
 }
-
 .sn-pagination-btn.is-disabled,
 .sn-pagination-btn.is-disabled:hover {
   color: rgb(var(--now-color_text--secondary)) !important;
 }
 
+/* ── Buttons ──────────────────────────────────── */
 .now-button.-primary:not(.is-disabled):hover {
   background-color: rgb(var(--now-color_background--secondary)) !important;
   border-color: rgb(var(--mint-1)) !important;
   color: rgb(var(--mint-1)) !important;
 }
-
-:where(a, button, [tabindex]):focus-visible {
-  outline: 2px solid rgba(var(--mint-1), 0.8) !important;
-  outline-offset: 2px;
-}
-
 .btn-tertiary {
   background-color: rgb(var(--now-color_background--tertiary)) !important;
   border-color: rgb(var(--mint-0)) !important;
   color: rgb(var(--now-color_text--primary)) !important;
 }
 
+/* ── Focus Styles ─────────────────────────────── */
+:where(a, button, [tabindex]):focus-visible {
+  outline: 2px solid rgba(var(--mint-1), 0.8) !important;
+  outline-offset: 2px;
+}
+
+/* ── Scope, Filter, and Titles ────────────────── */
 .scope-name,
 .filter-title {
   color: rgb(var(--now-color_text--primary)) !important;
 }
-
 .filter-container {
   background-color: rgb(var(--now-color_background--secondary)) !important;
   border-color: rgb(var(--now-color_border--default)) !important;
 }
 
-/* Make the choice pill a positioning context */
+/* ── Select2 Dropdowns ───────────────────────── */
 .select2-container .select2-choice {
-  position: relative;        /* keep this */
+  position: relative;
 }
-
-/* Shrink the arrow wrapper + wipe old sprite */
-.select2-container .select2-choice .select2-arrow{
-  width: 18px !important;    /* adjust gap – try 16-20px */
+.select2-container .select2-choice .select2-arrow {
+  width: 18px !important;
   padding: 0 !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
 }
-
-/* Re-style the <b> triangle */
-.select2-container .select2-choice .select2-arrow > b{
-  display:inline-block;
-  width:0; height:0;
-
-  border-left : 4px solid transparent;
+.select2-container .select2-choice .select2-arrow > b {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-top  : 6px solid rgb(var(--mint-0));  /* mint */
-
-  position:relative;
+  border-top: 6px solid rgb(var(--mint-0));
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  pointer-events:none;
+  pointer-events: none;
 }
-
-/* (optional) hover tint */
-.select2-container .select2-choice:hover .select2-arrow > b{
-  border-top-color: rgb(var(--mint-1));
-}
-
-/* Choice pill – hover / focus */
-.select2-container .select2-choice:hover,
-.select2-container .select2-choice:focus {
-  background: rgba(var(--mint-0), 0.15) !important;   /* translucent mint */
-  border-color: rgb(var(--mint-1)) !important;
-  color: rgb(var(--mint-1)) !important;               /* text = lighter mint */
-}
-
-/* keep arrow mint-lighter on hover */
 .select2-container .select2-choice:hover .select2-arrow > b {
   border-top-color: rgb(var(--mint-1));
 }
-
-/* The pop-up panel */
+.select2-container .select2-choice:hover,
+.select2-container .select2-choice:focus {
+  background: rgba(var(--mint-0), 0.15) !important;
+  border-color: rgb(var(--mint-1)) !important;
+  color: rgb(var(--mint-1)) !important;
+}
 .select2-drop,
-.select2-results {   /* inner UL */
+.select2-results {
   background: rgb(var(--now-color_background--secondary)) !important;
   border: 1px solid rgb(var(--now-color_border--default)) !important;
   color: rgb(var(--now-color_text--primary)) !important;
 }
-
-/* Highlighted option as you arrow / mouse over */
 .select2-results .select2-highlighted {
   background: rgba(var(--mint-0), 0.25) !important;
   color: rgb(var(--mint-1)) !important;
 }
-
-/* Search box at the top of the dropdown (if enabled) */
 .select2-drop .select2-search input {
   background: rgb(var(--now-color_background--tertiary)) !important;
   border: 1px solid rgb(var(--now-color_border--default)) !important;
   color: rgb(var(--now-color_text--primary)) !important;
 }
 
+/* ── Misc Elements ────────────────────────────── */
 .toggle-left img,
 .toggle-right img {
   filter: invert(80%) opacity(90%);
+}
+
+img[src*="icon-inputs-and-outputs.svg"] {
+  filter: brightness(0) saturate(100%) invert(1) !important;
 }
 
 div.ff-content:hover {
@@ -383,48 +343,17 @@ div.ff-content:hover {
 span.then-text, span.if-then-child {
   color: rgb(var(--now-color_text--primary)) !important;
 }
-
-.inline-help-button::before {
-  filter: saturate(0%) invert(1) brightness(500%) contrast(200% )!important;
-}
-
+.inline-help-button::before,
 .icon.icon-add::before, .icon.icon-connect-close::before {
-  filter: saturate(0%) invert(1) brightness(500%) contrast(200% )!important;
+  filter: saturate(0%) invert(1) brightness(500%) contrast(200%) !important;
 }
-
-/* Brighten all dynamic icons and image-based UI icons */
-
-/* img[src*="svg"] {
-  filter: saturate(0%) invert(1) brightness(500%) contrast(200% )!important;
-} */
-
 span.pill-text, .error-handling-label {
   color: rgb(var(--now-color_text--primary)) !important;
 }
 
-.ui-refresh 
-  #action-editor 
-  #editor-body > .SplitPane.vertical > .Pane.vertical.Pane2 > .SplitPane.vertical > .Pane2 
-  .pn-col h2.pn-title {
-    color: rgb(var(--now-color_text--primary)) !important;
-    background-color: rgb(var(--now-color_background--primary)) !important;
-}
-
-/* Apply dark styles only after this class is present */
-/* body.after-dark-ready .filter-container {
-  background-color: rgb(var(--now-color_background--secondary)) !important;
-  color: rgb(var(--now-color_text--primary)) !important;
-}
-
-body.after-dark-ready .pn-title-section h2.pn-title {
-  color: rgb(var(--now-color_text--primary)) !important;
-} */
-
-.data-pane-title {
-  color: rgb(var(--now-color_text--primary)) !important;
-  background-color: rgb(var(--now-color_background--primary)) !important;
-}
-
+/* ── Editor & Panes ───────────────────────────── */
+.ui-refresh #action-editor #editor-body > .SplitPane.vertical > .Pane.vertical.Pane2 > .SplitPane.vertical > .Pane2 .pn-col h2.pn-title,
+.data-pane-title,
 h2.pn-title {
   color: rgb(var(--now-color_text--primary)) !important;
   background-color: rgb(var(--now-color_background--primary)) !important;
@@ -438,82 +367,17 @@ h2.pn-title {
   color: white !important;
 }
 
-div.spinning, .footer-section, #pop_up_modal_wrapper {
-  background-color: rgba(var(--now-color_background--primary), 0.8) !important;
-}
-
+/* ── Modals & Overlays ────────────────────────── */
+div.spinning, .footer-section, #pop_up_modal_wrapper,
 .ReactModal__Content, .ReactModal__Content--after-open, .fd-modal-md, .modal-content, .popupModal {
   background-color: rgba(var(--now-color_background--primary), 0.8) !important;
   color: rgb(var(--now-color_text--primary)) !important;
 }
 
-.icon-undo-outline-sm::before, 
-.icon-redo-outline-sm::before,
-.toggle-bar::before, 
-.help-toggle-header::before, 
-.icon-ellipsis::before, 
-.opener::before, 
-.inline-annotation-button::before, 
-.icon-vcr-down::before, 
-.icon-drag-dots::before {
-  filter: saturate(0%) invert(1) brightness(500%) contrast(200% )!important;
+.dot.green{
+  background-color: rgb(var(--mint-0)) !important;
+  color: rgb(var(--mint-0)) !important; /* fallback for non-circle cases */
 }
-
-div.Pane2, .side-pane {
-  background-color: rgb(var(--now-color_background--tertiary)) !important;
-}
-
-pn-content {
-  background-color: rgb(var(--now-color_background--secondary)) !important;
-
-}
-
-img.subflow[src*="svg"] {
-  filter: saturate(0%) invert(1) brightness(500%) contrast(200% )!important;
-}
-
-/* canvas {
-    background-color: rgb(var(--now-color_background--primary)) !important;
-} */
-
-.ui-refresh #flow-editor #editor-body > .SplitPane.vertical > .Pane2 .pn-col .pn-content,
-.ui-refresh #action-editor #editor-body > .SplitPane.vertical > .Pane.vertical.Pane2 > .SplitPane.vertical > .Pane2 .pn-col .pn-content {
-  background: rgb(var(--now-color_background--tertiary)) !important;
-}
-
-.builder-btn-primary-bare-text {
+.state.green {
   color: rgb(var(--mint-0)) !important;
-}
-
-.picker-result-list-wrapper {
-  background: rgb(var(--now-color_background--tertiary)) !important;
-}
-
-li.action-picker-result-header > span {
-  color: rgb(var(--now-color_text--primary)) !important;
-}
-
-ul.picker-result-list > li {
-  color: rgb(var(--now-color_text--primary)) !important;
-  background-color: rgb(var(--now-color_background--secondary)) !important; 
-}
-
-li.picker-component-result > button:not(.is-disabled):hover {
-  background-color: rgb(var(--now-color_background--primary)) !important;
-  color: rgb(var(--now-color_text--primary)) !important;
-}
-
-li.picker-component-result > button:not(.is-disabled):active {
-  background-color: rgb(var(--now-color_background--primary)) !important;
-  color: rgb(var(--now-color_text--primary)) !important;
-}
-
-li.picker-component-result.selected > button:not(.is-disabled) {
-  background-color: rgb(var(--now-color_background--primary)) !important;
-  color: rgb(var(--now-color_text--primary)) !important;
-}
-
-li.picker-component-result-info-btn > button:not(.is-disabled):hover {
-  color: rgb(var(--now-color_text--primary)) !important;
-  background-color: rgb(var(--now-color_background--primary)) !important;
 }

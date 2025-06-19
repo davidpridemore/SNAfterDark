@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "ServiceNow After Dark",
-  "version": "1.0",
-  "description": "Applies a dark theme to ServiceNow UI",
+  "version": "1.0.1",
+  "description": "Applies a dark theme to ServiceNow's Flow Designer and Workflow Studio tools",
 
   "host_permissions": [
     "*://*.service-now.com/now/workflow-studio/*",
