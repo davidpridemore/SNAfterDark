@@ -1,1 +1,2 @@
 # SNAfterDark
+This extension was inspired by a Linkedin post by Tim Woodruff. It's a fairly simple tool that overrides pre-defined ServiceNow CSS classes and does a bit of inline style injection via JS to create a dark mode for ServiceNow's Workflow Studio tools, particularly flow designer. It is not complete, and will probably never be finished because I have kids and a job, but I'll do my best to keep it up to date.
