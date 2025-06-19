@@ -54,6 +54,7 @@
   --now-label-value-inline--color: var(--now-color_text--secondary) !important;
   --now-heading--header-primary--color: var(--white) !important;
   --now-heading--header-secondary--color: var(--mint-0) !important;
+  --now-heading--title-secondary--color: var(--mint-0) !important;
   --now-heading--title-tertiary--color: var(--mint-0) !important;
   --now-checkbox_label--color: var(--now-color_text--primary) !important;
   --now-content-tree--color: var(--now-color_text--primary) !important;
